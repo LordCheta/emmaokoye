@@ -2,26 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome, I am Emma Okoye</title>
     <!-- Latest compiled and minified CSS for bootstrap 4 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- google font cdn -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin|PT+Sans|Quicksand:700|Titan+One&display=swap" rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" href="./styles/main.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body id="main-body">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                <!-- logo text -->
+            <a class="navbar-brand mt-5" id="logo" href="index.html">EMMA OKOYE <br> 
+                <span id="subText" >the official website of prof. emma okoye</span></a>
+            
     
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                    
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse eo-topNavLinks" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-4">
+                        <a class="nav-link customNavLink" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link customNavLink" href="journals.html">Journals</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link customNavLink" href="papers.html">Papers</a>
+                    </li> 
+                    <li class="nav-item mr-4">
+                            <a class="nav-link customNavLink" href="textbooks.html">Textbooks</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                            <a class="nav-link customNavLink" href="inaugural_lecture.html">Inaugural Lecture</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                            <a class="nav-link customNavLink" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div> 
+        
+        </nav>
+    
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12" id="carousel-section">
+                    <!-- content here --> <p>hi</p><br> <p>hi</p><br> <p>hi</p><br> <p>hi</p><br>
+                </div>
 
-    <script>
-        // jQuery library 
-        require("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js") 
-        // Popper JS
-        require("https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
-        // Latest bootstrap 4 compiled JavaScript
-        require("https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
-        // Custom JavaScript
-        require("./js/app.js")
-    </script>
+            </div>
+
+        </section>
+
+
+    
 </body>
 </html>

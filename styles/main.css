@@ -1,0 +1,60 @@
+.navbar{
+    background-color: #5cdb95;
+    width: 100%;
+}
+.customNavLink{
+    color: #05386b !important;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-weight: 200;
+}
+#logo{
+    color: #05386b;
+    font-size: 34px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.07em;
+}
+#subText{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 0.07em;
+    position: relative;
+    top: -35px;
+}
+.navbar-toggler{
+    border: 0px solid transparent;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+#carousel-section{
+    background: linear-gradient(180deg, #5cdb957a 0%, 
+    #1e3f4d09 99.61%, 
+    #729fa66c 100%, rgba(255, 255, 255, 0) 100%),
+    url('https://images.unsplash.com/photo-1520467795206-62e33627e6ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+    background-repeat:no-repeat; 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+/* common nav for pages except index page */
+#go-home{
+    color: #05386b;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* letter-spacing: 0.07em; */
+}
+.other_pages_top_nav>li>a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300 !important;
+    color: #05386b !important;
+}
+.page_header{
+    font-family: 'Quicksand', sans-serif;;
+    font-size: 40px;
+    color: #05386b
+}
+hr{
+    border:1px solid #5cdb95;
+}
