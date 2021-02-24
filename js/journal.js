@@ -1,7 +1,7 @@
 let test = document.getElementById('generalList'); // Gets the div inside which data will be rendered;
 let pagination = document.getElementById('pagination');
 let currentPage = 1; // Global variable keep track of the current page being rendered;
-let renderSize = 2; // The number of data to display
+let renderSize = 10; // The number of data to display
 let filePath = "/js/journals.json";
 
 
