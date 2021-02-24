@@ -1,10 +1,15 @@
 let test = document.getElementById('generalList'); // Gets the div inside which data will be rendered;
 let pagination = document.getElementById('pagination');
 let currentPage = 1; // Global variable keep track of the current page being rendered;
-let renderSize = 10; // The number of data to display
+let renderSize = 1; // The number of data to display
 
 
-function renderList(itemsToRender) { // Renders the amount of info giving to the UI
+function renderList(dataSet, currentPage, renderSize) { // Renders the amount of info giving to the UI
+
+    let startIndex = (currentPage - 1) * renderSize;
+    let endIndex = startIndex + renderSize;
+    let itemsToRender = dataSet.slice(startIndex, endIndex);
+    // console.log(startIndex, endIndex, );
     for (const item of itemsToRender) {
         let template = 
         `<div id="generalList">
@@ -18,7 +23,6 @@ function renderList(itemsToRender) { // Renders the amount of info giving to the
 
 function renderPagination(dataSize, activePage, displaySize) {
     let noOfPages = Math.ceil(dataSize / displaySize);
-    console.log(dataSize, displaySize, noOfPages);
     let index = 0;
     for (index; index < noOfPages; index++) {
         let pageNumber = index + 1;
@@ -30,7 +34,6 @@ function renderPagination(dataSize, activePage, displaySize) {
 
         }
         pagination.insertAdjacentHTML('beforeend', template);
-        console.log(index);
     }
 };
 
@@ -44,5 +47,5 @@ fetch("/js/journals.json")
     dataArr = result.data;
     // console.log(dataArr);
     renderPagination(dataArr.length, currentPage, renderSize);
-    renderList(dataArr);
+    renderList(dataArr, currentPage, renderSize);
 });
