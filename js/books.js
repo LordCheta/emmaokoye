@@ -2,7 +2,7 @@ let test = document.getElementById('generalList'); // Gets the div inside which 
 let pagination = document.getElementById('pagination');
 let currentPage = 1; // Global variable keep track of the current page being rendered;
 let renderSize = 2; // The number of data to display
-let filePath = "/js/journals.json";
+let filePath = "/js/books.json";
 
 
 function renderList(dataSet, currentPage, renderSize) { // Renders the amount of info giving to the UI
