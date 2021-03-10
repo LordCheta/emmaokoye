@@ -21,11 +21,11 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- Tailwind CSS -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
 </head>
 <body class="container-fluid">
     <header id="indexHeader">
-        <nav id="indexMainNav" class="navbar navbar-expand-lg navbar-light sticky-top">
+        <nav id="indexMainNav" class="navbar navbar-expand-lg navbar-light">
              <!-- logo text -->
              <a class="navbar-brand" id="logo" href="index.html">Prof. Emma</a>
             
@@ -38,30 +38,39 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse eo-topNavLinks" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-4 customActiveNav">
+                        <a class="nav-link customNavLink" href="index.html">Home</a>
+                    </li>
                     <li class="nav-item mr-4">
                         <a class="nav-link customNavLink" href="about.html">About</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link customNavLink" href="profile.html">Profile</a>
+                        <a class="nav-link customNavLink" href="profile.html">library</a>
+                        <!-- <img style='vertical-align:middle;' src="./assests/Mask.svg"/> -->
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link customNavLink" href="journals.html">Journals</a>
+                        <a class="nav-link customNavLink" href="journals.html">Gallery</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link customNavLink" href="papers.html">Papers</a>
-                    </li> 
-                    <li class="nav-item mr-4">
-                            <a class="nav-link customNavLink" href="textbooks.html">Textbooks</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                            <a class="nav-link customNavLink" href="inaugural_lecture.html">Inaugural Lecture</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                            <a class="nav-link customNavLink" href="contact.html">Contact</a>
+                        <a class="nav-link customNavLink" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div> 
         </nav>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="jumboHeader">Prof. Emma Okoye</h1>
+                    <p class="jumboTitles">(Ph.D, CNA, MBA-accountancy, banking & finance)</p>
+                    <p class="jumboText">Specialized in Public Sector Accounting, Forensic Accounting & Auditing.</p>
+                </div>
+
+                <div class="col-md-5">
+                    <img height="79.5%" src="./assests/prof-pic.png" alt="">
+                </div>
+            </div>
+        </div>
 
     </header>
     

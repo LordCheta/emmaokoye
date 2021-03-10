@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rouge+Script&display=swap');
 #indexHeader{
     width: 100vw;
     min-width: 100vw;
@@ -10,6 +10,7 @@
     width: 100vw;
     height: 100px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.58) 50%, rgba(255, 255, 255, 0) 233.96%);
+    border-bottom: 2px solid #5CDB95;
 }
 #logo{
     font-family: 'Rouge Script', cursive;
@@ -20,4 +21,39 @@
 }
 .customNavLink{
     color: #ffffff !important;
+    font-family: 'Open Sans', sans-serif;
+}
+.customActiveNav{
+    /* border-bottom: 2px solid #ffffff; */
+    height: 100%;
+}
+.nav-item{
+    margin-inline: 20px !important;
+}
+.jumbotron{
+    height: 100% !important;
+    background: transparent;
+}
+.jumboHeader{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: 600;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+.jumboTitles{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    /* font-size: 14px; */
+    font-weight: 600;
+    margin-left: 5%;
+}
+.jumboText{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 2%;
+    margin-left: 5%;
 }
