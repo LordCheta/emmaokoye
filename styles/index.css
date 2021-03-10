@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+#indexHeader{
+    width: 100vw;
+    min-width: 100vw;
+    height:100vh;
+    min-height:100vh;
+    background-image: url(../assests/backgroundPicture.png);
+}
+#indexMainNav{
+    width: 100vw;
+    height: 100px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.58) 50%, rgba(255, 255, 255, 0) 233.96%);
+}
+#logo{
+    font-family: 'Rouge Script', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56.41px;
+    color: #ffffff;
+}
+.customNavLink{
+    color: #ffffff !important;
+}
