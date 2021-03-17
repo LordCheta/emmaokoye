@@ -25,90 +25,178 @@
 </head>
 <body class="container-fluid">
     <header id="indexHeader">
-        <nav id="indexMainNav" class="navbar navbar-expand-lg navbar-light">
-             <!-- logo text -->
-             <a class="navbar-brand" id="logo" href="index.html">Prof. Emma</a>
-            
-    
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                    
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse eo-topNavLinks" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mr-4 customActiveNav">
-                        <a class="nav-link customNavLink" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link customNavLink" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link customNavLink" href="profile.html">library</a>
-                        <!-- <img style='vertical-align:middle;' src="./assests/Mask.svg"/> -->
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link customNavLink" href="journals.html">Gallery</a>
-                    </li>
-                    <li class="nav-item mr-4">
-                        <a class="nav-link customNavLink" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div> 
-        </nav>
+        <div id="indexMainNavDiv">
+            <nav id="indexMainNav" class="navbar navbar-expand-lg navbar-light">
+                <!-- logo text -->
+                <a class="navbar-brand" id="logo" href="index.html">Prof. Emma</a>
+                
+        
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                        
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse eo-topNavLinks" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mr-4 customActiveNav">
+                            <a class="nav-link customNavLink" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link customNavLink" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link customNavLink" href="profile.html">library</a>
+                            <!-- <img style='vertical-align:middle;' src="./assests/Mask.svg"/> -->
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link customNavLink" href="journals.html">Gallery</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link customNavLink" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
+        </div>
 
         <div class="jumbotron">
             <div class="row">
-                <div class="col-md-7">
-                    <h1 class="jumboHeader">Prof. Emma Okoye</h1>
-                    <p class="jumboTitles">(Ph.D, CNA, MBA-accountancy, banking & finance)</p>
-                    <p class="jumboText">Specialized in Public Sector Accounting, Forensic Accounting & Auditing.</p>
-                    <button class="reqQuote"><a href="#contact">Request quote</a></button>
+                <div id="" class="col-md-7">
+                    <div class="jumboBody">
+                        <h2 class="jumboHeader">Prof. Emma Okoye</h2>
+                        <p class="jumboTitles">(Ph.D, CNA, MBA-accountancy, banking & finance)</p>
+                        <p class="jumboText">Specialized in Public Sector Accounting, Forensic Accounting & Auditing.</p>
+                        <a href="#contact"><button class="btn btn-outline-success btn-md">Request quote</button></a>
+                    </div>
                 </div>
 
-                <div class="col-md-5">
+                <!-- blur prof's pic and use that at center for small screens -->
+                <div class="col-md-5 pl-0">
                     <!-- tell TG to group the img and the circle rings as svg -->
-                    <img  height="79.5%" src="./assests/prof-pic.png" alt="">
+                    <img height="80.5%" src="./assests/prof-pic.png" alt="">
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="row">
-        <section id="mainSectionA" class="col-md-10">
-            <h2 id="msAHeader">About Me</h2>
+    <main>
+        <!-- about section -->
+        <section id="mainSectionA" class="w-90 m-auto">
+            <h2 id="msAHeader" class="msHeader">About Me</h2>
             <div class="row">
-                <div class="timeline col-md-6">
+                <div class="timeline col-md-4">
                     <div class="container right">
-                      <div class="content">
-                        <h2>Biography</h2>
-                      </div>
+                      <a class="content">
+                        Biography
+                      </a>
                     </div>
                     <div class="container right">
-                      <div class="content">
-                        <h2>Profile</h2>
-                      </div>
+                      <a class="content">
+                        Profile
+                      </a>
                     </div>
                     <div class="container right">
-                        <div class="content">
-                          <h2>Resume</h2>
-                        </div>
+                        <a class="content">
+                          Resume
+                        </a>
                     </div>
                   </div>
 
-                <div class="col-md-5">
+                <div class="col-md-7">
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
                         ratione quos facere, dignissimos amet harum, quis eligendi eos 
                         illum repellat labore blanditiis aperiam?
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
+                        ratione quos facere, dignissimos amet harum, quis eligendi eos 
+                        illum repellat labore blanditiis aperiam?
+                        <br>
+                        <br>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
                         ratione quos facere, dignissimos amet harum, quis eligendi eos 
                         illum repellat labore blanditiis aperiam?
                     </p>
-                    <button class="reqQuote"><a href="#contact">Request quote</a></button>
+                    <!-- dynamically set href depending on the button selected -->
+                    <a href="/about#biography"><button class="btn btn-success btn-md">Read More</button></a>                
+                </div>
+            </div>
+        </section>
+
+        <!-- library section -->
+        <section class="w-90 m-auto">
+            <h2 class="msHeader">Library</h2>
+            <div>
+                <button>
+
+                </button>
+                <button>
+                    
+                </button>
+                <button>
+                    
+                </button>
+                <button>
+                    
+                </button>
+            </div>
+        </section>
+        <!-- contact section -->
+        <section id="contact" class="w-90 m-auto">
+            <h2 class="msHeader">Contact Me</h2>
+            <div class="row">
+                <form class="col-sm-8" >
+                    <h4 class="mt-3 contact-page-header">SEND DIRECT EMAIL</h4>
+                    <div class="form-group">
+                        <label class="contact-labels" for="email">Your Full Name*</label>
+                        <input type="text" class="form-control" id="fullname" placeholder="John Doe" >
+                    </div>
+                    <div class="form-group">
+                        <label class="contact-labels" for="email">Your Email*</label>
+                        <input type="email" class="form-control" id="email" placeholder="johndoe@mail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="contact-labels" for="pwd">Subject</label>
+                        <input type="text" class="form-control" id="subject">
+                    </div>
+
+                    <div>
+                        <label class="contact-labels" for="pwd">Message</label>
+                        <textarea type="text" class="form-control" rows="4" id="message"></textarea>
+                    </div><br>
+                    
+                    <button type="submit" class="btn btn-primary eo-send-mail-btn">Send Mail</button>
+                </form>
+
+                <!-- phone number and address -->
+                <div class="col-sm-4">
+                    <h4 class="mt-5 contact-page-header">GET IN TOUCH</h4>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <th class="address-table" scope="row"><img src="./assests/phone.svg" alt="phone"></th >
+                                <td class="address-table"><p class=" contact-details">+234 803 383 7919</p></td>
+                            </tr>
+                            <tr>
+                                <th class="address-table" scope="row"><img src="./assests/mail.svg" alt="email"></th >
+                                <td class="address-table"><p class="contact-details">eik.okoye@unizik.edu.ng</p></td>
+                            </tr>
+                            <tr>
+                                <th class="address-table" scope="row"><img src="./assests/office_address.svg" alt="office address"></th >
+                                <td class="address-table"><p class="contact-details">Department of Accountancy, Faculty of Management SciencesNnamdi Azikiwe University Awka. P.M.B 5025.</p></td>
+                            </tr>
+                            <tr>
+                                <th class="address-table" scope="row"><img src="./assests/home_address.svg" alt="permanent address"></th >
+                                <td class="address-table"><p class="contact-details">Prof. Emma Okoye’s Residence, Umuenechi, Umuanum Nibo, Awka South  Local Goverment Area, Nigeria.</p></td>
+                            </tr>
+                        </tbody>
+                    </table>            
                 </div>
             </div>
         </section>
