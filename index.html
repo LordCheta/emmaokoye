@@ -23,12 +23,12 @@
     <!-- Tailwind CSS -->
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
 </head>
-<body class="container-fluid">
+<body class="container-fluid px-0">
     <header id="indexHeader">
         <div id="indexMainNavDiv">
             <nav id="indexMainNav" class="navbar navbar-expand-lg navbar-light">
                 <!-- logo text -->
-                <a class="navbar-brand" id="logo" href="index.html">Prof. Emma</a>
+                <a class="navbar-brand logo" href="index.html">Prof. Emma</a>
                 
         
                 <!-- Toggler/collapsibe Button -->
@@ -84,7 +84,7 @@
         <!-- about section -->
         <section id="mainSectionA" class="w-90 m-auto">
             <h2 id="msAHeader" class="msHeader">About Me</h2>
-            <div class="row">
+            <div class="row mt-4">
                 <div class="timeline col-md-4">
                     <div class="container right">
                       <a class="content">
@@ -123,7 +123,7 @@
                         illum repellat labore blanditiis aperiam?
                     </p>
                     <!-- dynamically set href depending on the button selected -->
-                    <a href="/about#biography"><button class="btn btn-success btn-md">Read More</button></a>                
+                    <a href="/about#biography"><button class="btn btn-success btn-md mt-3">Read More</button></a>                
                 </div>
             </div>
         </section>
@@ -131,27 +131,70 @@
         <!-- library section -->
         <section class="w-90 m-auto">
             <h2 class="msHeader">Library</h2>
-            <div>
-                <button>
+            <div class="d-flex justify-content-center mx-auto mw-90 my-5 row">
+                <div class="col-md-5">
+                    <button class="d-flex justify-content-end w-100 card" style="background: url(assests/paper.png);">
+                        <div class="mx-auto w-90">
+                            <h3>Papers</h3>
+                            <p>Brief description of the papers written by Prof</p>
+                        </div>
+                    </button>
+                    <button class="d-flex justify-content-end w-100 mt-4 card" style="background: url(assests/books.png);">
+                        <div class="mx-auto w-90">
+                            <h3>Books & Thesis</h3>
+                            <p>Brief description of the papers written by Prof</p>
+                        </div>
+                    </button>
+                </div>
 
-                </button>
-                <button>
-                    
-                </button>
-                <button>
-                    
-                </button>
-                <button>
-                    
-                </button>
+                <div class="col-md-5">
+                    <button class="d-flex justify-content-end w-100 mt-4 card" style="background: url(assests/journals.png);">
+                        <div class="mx-auto w-90">
+                            <h3>Journals</h3>
+                            <p>Brief description of the papers written by Prof</p>
+                        </div>
+                    </button>
+                    <button class="d-flex justify-content-end w-100 mt-4 card" style="background: url(assests/lectures.png);">
+                        <div class="mx-auto w-90">
+                            <h3>Inaugural Lectures</h3>
+                            <p>Brief description of the papers written by Prof</p>
+                        </div>
+                    </button>
+                </div>
+
             </div>
         </section>
         <!-- contact section -->
         <section id="contact" class="w-90 m-auto">
             <h2 class="msHeader">Contact Me</h2>
             <div class="row">
-                <form class="col-sm-8" >
-                    <h4 class="mt-3 contact-page-header">SEND DIRECT EMAIL</h4>
+                <!-- phone number and address -->
+                <div class="col-sm-5">
+                    <h6 class="mt-2 mb-4 contact-page-header">Get in touch *</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <th class="address-table" scope="row"><img src="./assests/phone.svg" alt="phone"></th >
+                                <td class="address-table"><p class="contact-details">+234 803 383 7919</p></td>
+                            </tr>
+                            <tr>
+                                <th class="address-table" scope="row"><img src="./assests/mail.svg" alt="email"></th >
+                                <td class="address-table"><p class="contact-details">eik.okoye@unizik.edu.ng</p></td>
+                            </tr>
+                            <tr>
+                                <th class="address-table" scope="row"><img src="./assests/office_address.svg" alt="office address"></th >
+                                <td class="address-table"><p class="contact-details">Department of Accountancy, Faculty of Management Sciences, Nnamdi Azikiwe University Awka. P.M.B 5025.</p></td>
+                            </tr>
+                            <tr>
+                                <th class="address-table" scope="row"><img src="./assests/home_address.svg" alt="permanent address"></th >
+                                <td class="address-table"><p class="contact-details">Prof. Emma Okoye’s Residence, Umuenechi, Umuanum Nibo, Awka South  Local Goverment Area, Nigeria.</p></td>
+                            </tr>
+                        </tbody>
+                    </table>            
+                </div>
+
+                <form class="col-sm-6 offset-sm-1" >
+                    <h6 class="mt-2 mb-4 contact-page-header">Send a Direct E-mail *</h6>
                     <div class="form-group">
                         <label class="contact-labels" for="email">Your Full Name*</label>
                         <input type="text" class="form-control" id="fullname" placeholder="John Doe" >
@@ -171,49 +214,27 @@
                         <textarea type="text" class="form-control" rows="4" id="message"></textarea>
                     </div><br>
                     
-                    <button type="submit" class="btn btn-primary eo-send-mail-btn">Send Mail</button>
+                    <button type="submit" class="btn btn-success eo-send-mail-btn">Send Mail</button>
                 </form>
-
-                <!-- phone number and address -->
-                <div class="col-sm-4">
-                    <h4 class="mt-5 contact-page-header">GET IN TOUCH</h4>
-                    <table class="table table-sm">
-                        <tbody>
-                            <tr>
-                                <th class="address-table" scope="row"><img src="./assests/phone.svg" alt="phone"></th >
-                                <td class="address-table"><p class=" contact-details">+234 803 383 7919</p></td>
-                            </tr>
-                            <tr>
-                                <th class="address-table" scope="row"><img src="./assests/mail.svg" alt="email"></th >
-                                <td class="address-table"><p class="contact-details">eik.okoye@unizik.edu.ng</p></td>
-                            </tr>
-                            <tr>
-                                <th class="address-table" scope="row"><img src="./assests/office_address.svg" alt="office address"></th >
-                                <td class="address-table"><p class="contact-details">Department of Accountancy, Faculty of Management SciencesNnamdi Azikiwe University Awka. P.M.B 5025.</p></td>
-                            </tr>
-                            <tr>
-                                <th class="address-table" scope="row"><img src="./assests/home_address.svg" alt="permanent address"></th >
-                                <td class="address-table"><p class="contact-details">Prof. Emma Okoye’s Residence, Umuenechi, Umuanum Nibo, Awka South  Local Goverment Area, Nigeria.</p></td>
-                            </tr>
-                        </tbody>
-                    </table>            
-                </div>
             </div>
         </section>
 
     </main>
     
-    <footer>
-        <a class="navbar-brand" id="logo" href="index.html">Prof. Emma</a>
+    <footer class="mt-5 pt-3 pb-2">
+        <div class="w-90 m-auto">
+            <a class="navbar-brand logo" href="index.html">Prof. Emma</a>
+        </div>
         <div class="text-center">
-            <p>Glad to have you on my page..</p>
+            <p>Glad to have you on my page...</p>
             <p>Follow me on:</p>
-            <div>
-                <a href="">LinkedIn</a>
-                <a href="">Facebook</a>
-                <a href="">Twitter</a>
-                <a href="">Facebook</a>
+            <div class="mt-3 mb-4">
+                <a href=""><img src="assests/linkedin-icon.svg" alt="" srcset=""></a>
+                <a href=""><img src="assests/facebook-icon.svg" alt="" srcset=""></a>
+                <a href=""><img src="assests/twitter-icon.svg" alt="" srcset=""></a>
+                <a href=""><img src="assests/medium-icon.svg" alt="" srcset=""></a>
             </div>
+            <hr>
             <p>powered by Swizel Technology &copy; 2021</p>
         </div>
     </footer>
