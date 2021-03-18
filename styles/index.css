@@ -3,6 +3,7 @@
   --green: #5CDB95;
   --blue: #05386B;
   --white: #ffffff;
+  --light-blue: #f4faff;
 }
 
 /* Custom classes */
@@ -42,7 +43,7 @@ hr {
   font-weight: 400;
   font-size: 48px;
   line-height: 56.41px;
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .customNavLink{
@@ -223,7 +224,9 @@ hr {
     border-radius: 6px;
   }
 /* LIBRARY SECTION */
-
+.library {
+  background: var(--light-blue);
+}
 .card {
   height: 250px;
   max-height: 250px;
