@@ -4,6 +4,7 @@
   --blue: #05386B;
   --white: #ffffff;
   --light-blue: #f4faff;
+  --pink: #C0259E;
 }
 
 /* Custom classes */
@@ -307,4 +308,13 @@ footer {
 
 .about-active {
   display: block;
+}
+
+/* PAPERS PAGE */
+.papers p {
+  background-color: white;
+  border-left: 5px solid var(--pink);
+  border-radius: 5px 0 0 5px;
+  padding: .8rem 2rem;
+  margin-top: 2rem;
 }
