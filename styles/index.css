@@ -31,7 +31,13 @@ hr {
   /* height: 100px; */
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.58) 50%, rgba(255, 255, 255, 0) 233.96%);
 }
-#indexMainNav{
+
+#otherMainNavDiv {
+  width: 100vw;
+  background: var(--green);
+
+}
+#indexMainNav, #otherMainNav{
   width: 90%;
   /* height: 100px; */
   border-bottom: 2px solid var(--green);
@@ -121,7 +127,7 @@ hr {
     padding: 5px 10px;
 } */
 
-.msHeader {
+.msHeader, .about-h2 {
   border-bottom: 2px solid var(--green);
   font-family: 'Open Sans', sans-serif;
   color: var(--blue);
@@ -292,4 +298,13 @@ footer {
   .right {
     left: 0%;
   }
+}
+
+/* ABOUT PAGE */
+.about-h2, .about-p {
+  display: none;
+}
+
+.about-active {
+  display: block;
 }
