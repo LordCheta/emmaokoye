@@ -1,0 +1,61 @@
+{
+    "data": [
+        {
+            "id": "1",
+			"title": "Inauguration Ceremony",
+			"description": "Architecto consequatur est, unde, beatae officiis rem ad perferendis neque numquam dolorum aperiam? Aperiam in totam iusto! Recusandae quae esse non odit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"imgs" : [
+				{
+					"src": "assests/gallery.png",
+					"alt": "Prof receiving award"
+				},
+				{
+					"src": "assests/gallery.png",
+					"alt": "Prof receiving award"
+				},
+				{
+					"src": "assests/gallery.png",
+					"alt": "Prof receiving award"
+				}
+			]
+        },
+        {
+            "id": "2",
+			"title": "Valecditory Ceremony",
+			"description": "Architecto consequatur est, unde, beatae officiis rem ad perferendis neque numquam dolorum aperiam? Aperiam in totam iusto! Recusandae quae esse non odit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"imgs" : [
+				{
+					"src": "assests/gallery.png",
+					"alt": "Prof receiving award"
+				},
+				{
+					"src": "assests/gallery.png",
+					"alt": "Prof receiving award"
+				},
+				{
+					"src": "assests/gallery.png",
+					"alt": "Prof receiving award"
+				}
+			]
+        },
+        {
+            "id": "3",
+			"title": "Some other Ceremony",
+			"description": "Architecto consequatur est, unde, beatae officiis rem ad perferendis neque numquam dolorum aperiam? Aperiam in totam iusto! Recusandae quae esse non odit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+			"imgs" : [
+				{
+					"src": "assests/gallery.png",
+					"alt": "Prof receiving award"
+				},
+				{
+					"src": "assests/gallery.png",
+					"alt": "Prof receiving award"
+				},
+				{
+					"src": "assests/gallery.png",
+					"alt": "Prof receiving award"
+				}
+			]
+        }
+    ]
+}
