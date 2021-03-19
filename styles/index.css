@@ -160,10 +160,14 @@ hr {
   /* Container around content */
   .container {
     margin-bottom: 1.5rem;
-    padding: 10px 40px;
+    padding: 10px 4px;
     position: relative;
     background-color: inherit;
     width: 50%;
+  }
+
+  .container.right {
+    padding-left: 30px;
   }
   
   /* The circles on the timeline */
@@ -178,6 +182,7 @@ hr {
     top: 14px;
     border-radius: 50%;
     z-index: 1;
+    left: -16px;
   }
   
   /* Place the container to the left */
@@ -219,9 +224,9 @@ hr {
   }
   
   /* Fix the circle for containers on the right side */
-  .right::after {
+  /* .right::after {
     left: -16px;
-  }
+  } */
   
   /* The actual content */
   .content {

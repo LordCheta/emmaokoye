@@ -89,25 +89,42 @@
             <div class="row mt-4">
                 <div class="timeline col-md-4">
                     <div class="container right">
-                      <a class="content">
-                        Biography
-                      </a>
-                    </div>
-                    <div class="container right">
-                      <a class="content">
-                        Profile
-                      </a>
-                    </div>
-                    <div class="container right">
-                        <a class="content">
-                          Resume
+                        <a class="content about-content">
+                          Biography
                         </a>
                     </div>
-                  </div>
+                    <div class="container">
+                    <a class="content about-content">
+                        Profile
+                    </a>
+                    </div>
+                    <div class="container">
+                        <a class="content about-content">
+                        Resume
+                        </a>
+                    </div>
+                </div>
 
-                <div class="col-md-7">
-                    <p>
+                <div class="col-md-7 about-details">
+                    <p id="biography" class="about-p about-active">
+                        BiographyLorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
+                        ratione quos facere, dignissimos amet harum, quis eligendi eos 
+                        illum repellat labore blanditiis aperiam?
+                        <br>
+                        <br>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
+                        ratione quos facere, dignissimos amet harum, quis eligendi eos 
+                        illum repellat labore blanditiis aperiam?
+                    </p>
+
+                    <p id="resume" class="about-p">
+                        Resume
+                    </p>
+
+                    <p id="profile" class="about-p">
+                        ProfileLorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
                         ratione quos facere, dignissimos amet harum, quis eligendi eos 
                         illum repellat labore blanditiis aperiam?
@@ -125,7 +142,7 @@
                         illum repellat labore blanditiis aperiam?
                     </p>
                     <!-- dynamically set href depending on the button selected -->
-                    <a href="/about#biography"><button class="btn btn-success btn-md mt-3">Read More</button></a>                
+                    <a href="/about.html"><button class="btn btn-success btn-md mt-3">Read More</button></a>                
                 </div>
             </div>
         </section>
@@ -241,5 +258,8 @@
             <p>with &hearts; by <a href="https://www.linkedin.com/in/mcheta">Maduabuchi Chinaechetam</a> &copy; 2021</p>
         </div>
     </footer>
+
+    <script src="./js/helpers.js"></script>
+
 </body>
 </html>
