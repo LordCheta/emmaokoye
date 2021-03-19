@@ -1,8 +1,8 @@
 let test = document.getElementById('generalList'); // Gets the div inside which data will be rendered;
 let pagination = document.getElementById('pagination');
 let currentPage = 1; // Global variable keep track of the current page being rendered;
-let renderSize = 2; // The number of data to display
-let filePath = "/js/lecture.json";
+let renderSize = 5; // The number of data to display
+let filePath = "./js/papers.json";
 
 
 function renderList(dataSet, currentPage, renderSize) { // Renders the amount of info giving to the UI
@@ -13,12 +13,11 @@ function renderList(dataSet, currentPage, renderSize) { // Renders the amount of
     // console.log(startIndex, endIndex, );
     for (const item of itemsToRender) {
         let template = 
-        `<div id="generalList">
-            <div class="list">
-                <p class="listText">${item.title}</p>
-            </div>
-        </div>`;
-        test.insertAdjacentHTML('afterbegin', template);
+        `<div class="list">
+            <p class="listText">${item.title}</p>
+        </div>
+        `;
+        test.insertAdjacentHTML('beforeend', template);
     }
 };
 
