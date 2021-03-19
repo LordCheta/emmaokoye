@@ -238,7 +238,7 @@ hr {
   max-height: 250px;
   border-radius: 15px;
   border: none;
-  color: var(--white);
+  color: var(--white) !important;
   text-align: left;
 }
 
