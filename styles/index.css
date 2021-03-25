@@ -2,7 +2,6 @@
 :root {
   --green: #5CDB95;
   --blue: #05386B;
-  --white: #ffffff;
   --light-blue: #f4faff;
   --pink: #C0259E;
 }
@@ -14,6 +13,14 @@
 
 .mw-90 {
   max-width: 90%
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.green {
+  color: var(--green);
 }
 
 hr {
@@ -143,16 +150,6 @@ hr {
 }
 
 /* END LIBRARY SECTION */
-/* CONTACT SECTION */
-.contact-page-header {
-  color: var(--blue);
-}
-
-.address-table {
-  border: none !important;
-}
-
-/* CONTACT SECTION END */
 
 /* FOOTER START */
 footer {
@@ -220,6 +217,16 @@ footer {
   color: var(--green) !important;
   font-size: 1.3rem;
 }
+
+#resume button, #resumeDetail button {
+  color: var(--green);
+  font-size: 1.2rem;
+}
+
+#resume button:hover, #resumeDetail button:hover {
+  color: var(--blue);
+}
+
 /* PAPERS PAGE */
 #generalList p {
   background-color: white;
