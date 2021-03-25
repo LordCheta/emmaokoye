@@ -86,32 +86,50 @@
         <!-- TODO check github for how to implement the timeline stuff -->
         <section id="mainSectionA" class="w-90 m-auto pb-5">
             <h2 id="msAHeader" class="msHeader">About Me</h2>
-            <div class="row mt-4">
-                <div class="timeline col-md-4">
-                    <div class="container right">
-                        <a class="content about-content">
-                          Biography
-                        </a>
-                    </div>
-                    <div class="container">
-                    <a class="content about-content">
+            <div class="d-md-flex d-none m-auto mt-4 row w-90">
+                <div class="col-md-3 offset-1 list-group about-ul" id="myList" role="tablist">
+                    <li class="px-2 py-4 active" data-toggle="list" href="#biography" role="tab">
+                      <a class="about-content">
+                        Biography
+                      </a>
+                    </li>
+                    <li class="px-2 py-4 " data-toggle="list" href="#profile" role="tab">
+                      <a class="about-content">
                         Profile
-                    </a>
-                    </div>
-                    <div class="container">
-                        <a class="content about-content">
-                        Resume
+                      </a>
+                    </li>
+                    <li class="px-2 py-4 " data-toggle="list" href="#resume" role="tab">
+                        <a class="about-content">
+                          Resume
                         </a>
-                    </div>
+                    </li>
                 </div>
 
-                <div class="col-md-7 about-details">
-                    <p id="biography" class="about-p about-active">
-                        BiographyLorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                <div class="col-md-7 offset-1 tab-content py-4">
+                    <p id="biography" class="tab-pane active" role="tabpanel">
+                        BIOGRAPHY
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
                         ratione quos facere, dignissimos amet harum, quis eligendi eos 
                         illum repellat labore blanditiis aperiam?
                         <br>
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
+                        ratione quos facere, dignissimos amet harum, quis eligendi eos 
+                        illum repellat labore blanditiis aperiam?
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
+                        ratione quos facere, dignissimos amet harum, quis eligendi eos 
+                        illum repellat labore blanditiis aperiam?
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
+                        ratione quos facere, dignissimos amet harum, quis eligendi eos 
+                        illum repellat labore blanditiis aperiam?<br>
                         <br>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
@@ -119,17 +137,29 @@
                         illum repellat labore blanditiis aperiam?
                     </p>
 
-                    <p id="resume" class="about-p">
-                        Resume
+                    <p id="profile" class="tab-pane" role="tabpanel">
+                        PROFILE
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
+                        ratione quos facere, dignissimos amet harum, quis eligendi eos 
+                        illum repellat labore blanditiis aperiam?
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
+                        ratione quos facere, dignissimos amet harum, quis eligendi eos 
+                        illum repellat labore blanditiis aperiam?
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
+                        ratione quos facere, dignissimos amet harum, quis eligendi eos 
+                        illum repellat labore blanditiis aperiam?
+                        <br>
                     </p>
 
-                    <p id="profile" class="about-p">
-                        ProfileLorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
-                        ratione quos facere, dignissimos amet harum, quis eligendi eos 
-                        illum repellat labore blanditiis aperiam?
-                        <br>
-                        <br>
+                    <p id="resume" class="tab-pane" role="tabpanel">
+                        RESUME
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
                         ratione quos facere, dignissimos amet harum, quis eligendi eos 
@@ -140,10 +170,74 @@
                         Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
                         ratione quos facere, dignissimos amet harum, quis eligendi eos 
                         illum repellat labore blanditiis aperiam?
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Eum, quaerat? Doloribus, enim harum. Quas, maxime inventore 
+                        ratione quos facere, dignissimos amet harum, quis eligendi eos 
+                        illum repellat labore blanditiis aperiam?
+                        <br>
                     </p>
-                    <!-- dynamically set href depending on the button selected -->
-                    <a href="/about.html"><button class="btn btn-success btn-md mt-3">Read More</button></a>                
                 </div>
+            </div>
+
+            <div class="row mt-4 d-md-none">
+                <ul class="about-ul-sm">
+                    <li class="p-2" data-toggle="collapse" href="#biographyDetail" role="button" aria-expanded="false" aria-controls="biographyDetail">
+                        <a class="about-content">
+                            Biography
+                        </a>
+                        <div class="collapse mt-2" id="biographyDetail">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque earum delectus ab, 
+                            distinctio similique itaque doloremque laborum veritatis dolorem sequi, 
+                            quae autem optio! Similique provident id mollitia numquam pariatur?
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque earum delectus ab, 
+                            distinctio similique itaque doloremque laborum veritatis dolorem sequi, 
+                            quae autem optio! Similique provident id mollitia numquam pariatur?
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque earum delectus ab, 
+                            distinctio similique itaque doloremque laborum veritatis dolorem sequi, 
+                            quae autem optio! Similique provident id mollitia numquam pariatur?
+                        </div>
+                    </li>
+                    <li class="p-2" data-toggle="collapse" href="#profileDetail" role="button" aria-expanded="false" aria-controls="profileDetail">
+                        <a class="about-content">
+                            Profile
+                        </a>
+                        <div class="collapse mt-2" id="profileDetail">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque earum delectus ab, 
+                            distinctio similique itaque doloremque laborum veritatis dolorem sequi, 
+                            quae autem optio! Similique provident id mollitia numquam pariatur?
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque earum delectus ab, 
+                            distinctio similique itaque doloremque laborum veritatis dolorem sequi, 
+                            quae autem optio! Similique provident id mollitia numquam pariatur?
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque earum delectus ab, 
+                            distinctio similique itaque doloremque laborum veritatis dolorem sequi, 
+                            quae autem optio! Similique provident id mollitia numquam pariatur?
+                        </div>
+                    </li>
+                    <li class="p-2" data-toggle="collapse" href="#resumeDetail" role="button" aria-expanded="false" aria-controls="resumeDetail">
+                        <a class="about-content">
+                            Resume
+                        </a>
+                        <div class="collapse mt-2" id="resumeDetail">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque earum delectus ab, 
+                            distinctio similique itaque doloremque laborum veritatis dolorem sequi, 
+                            quae autem optio! Similique provident id mollitia numquam pariatur?
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque earum delectus ab, 
+                            distinctio similique itaque doloremque laborum veritatis dolorem sequi, 
+                            quae autem optio! Similique provident id mollitia numquam pariatur?
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eaque earum delectus ab, 
+                            distinctio similique itaque doloremque laborum veritatis dolorem sequi, 
+                            quae autem optio! Similique provident id mollitia numquam pariatur?
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 

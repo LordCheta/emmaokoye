@@ -115,20 +115,6 @@ hr {
 
 /* END BUTTON STYLES */
 
-/* #mainSectionA{
-  margin: auto;
-  border-bottom: 2px solid #5CDB95;
-} */
-
-/* #msAHeader{
-    font-family: 'Open Sans', sans-serif;
-    color: #05386B;
-    font-size: 60px;
-    font-weight: 600;
-    margin-top: 10%;
-    padding: 5px 10px;
-} */
-
 .msHeader, .about-h2 {
   border-bottom: 2px solid var(--green);
   font-family: 'Open Sans', sans-serif;
@@ -139,103 +125,6 @@ hr {
   padding-bottom: .8rem;
 }
 
-/* The actual timeline (the vertical ruler) */
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: 05386B;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .container {
-    margin-bottom: 1.5rem;
-    padding: 10px 4px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-
-  .container.right {
-    padding-left: 30px;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: -17px;
-    background-color: #05386B;
-    border: 4px solid #05386B;
-    top: 14px;
-    border-radius: 50%;
-    z-index: 1;
-    left: -16px;
-  }
-  
-  /* Place the container to the left */
-  .left {
-    left: 0;
-  }
-  
-  /* Place the container to the right */
-  /* .right {
-    left: 50%;
-  } */
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 14px;
-    width: 0;
-    z-index: 1;
-    right: 20px;
-    border: medium solid #5CDB95;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #5CDB95;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 14px;
-    width: 0;
-    z-index: 1;
-    left: 20px;
-    border: medium solid #5CDB95;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #5CDB95 transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  /* .right::after {
-    left: -16px;
-  } */
-  
-  /* The actual content */
-  .content {
-    padding: .5rem 1rem;
-    /* background-color: #05386B; */
-    position: relative;
-    border-radius: 6px;
-  }
 /* LIBRARY SECTION */
 .library {
   background: var(--light-blue);
@@ -308,7 +197,7 @@ footer {
 }
 
 /* ABOUT PAGE */
-.about-h2, .about-p {
+.about-h2 {
   display: none;
 }
 
@@ -316,6 +205,21 @@ footer {
   display: block;
 }
 
+.about-ul, .about-ul-sm {
+  list-style-type: disclosure-closed;
+}
+
+.about-ul a, .about-ul-sm a{
+  text-decoration: none !important;
+  color: var(--blue) !important;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.about-ul li:hover, .about-ul a:hover, .about-ul .active a, .about-ul .active  {
+  color: var(--green) !important;
+  font-size: 1.3rem;
+}
 /* PAPERS PAGE */
 #generalList p {
   background-color: white;
