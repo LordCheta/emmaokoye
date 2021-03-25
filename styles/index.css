@@ -218,13 +218,13 @@ footer {
   font-size: 1.3rem;
 }
 
-#resume button, #resumeDetail button {
-  color: var(--green);
+#resume a, #resumeDetail a {
+  color: var(--green) !important;
   font-size: 1.2rem;
 }
 
-#resume button:hover, #resumeDetail button:hover {
-  color: var(--blue);
+#resume a:hover, #resumeDetail a:hover {
+  color: var(--blue) !important;
 }
 
 /* PAPERS PAGE */
