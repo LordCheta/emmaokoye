@@ -233,3 +233,11 @@ footer {
   border: none;
   margin-top: .5rem;
 }
+
+/* BOOKS PAGE */
+#extra-title{
+  font-family: 'Open Sans', sans-serif;    
+  /* font-size: 13px; */
+  font-weight: 100;
+  color: rgb(54, 54, 54);
+}
