@@ -241,3 +241,9 @@ footer {
   font-weight: 100;
   color: rgb(54, 54, 54);
 }
+
+/* Fonts */
+.aboutText{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+}
